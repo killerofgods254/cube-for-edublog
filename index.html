@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>is it working?</title>
+    <meta charset="UTF-8" />
+    
+  </head>
+
+  <body>
+    
+    <h1 id="dot0" class="dot"></h1>
+    <h1 id="dot1" class="dot"></h1>
+    <h1 id="dot2" class="dot"></h1>
+    <h1 id="dot3" class="dot"></h1>
+    <h1 id="dot4" class="dot"></h1>
+    <h1 id="dot5" class="dot"></h1>
+    <h1 id="dot6" class="dot"></h1>
+    <h1 id="dot7" class="dot"></h1>
+
+    <div class="slidecontainer">
+      <h4>Yspeed</h4>
+      <input
+        type="range"
+        min="0"
+        max="200"
+        value="100"
+        class="slider"
+        id="slidery"
+      />
+    </div>
+
+    <div class="slidecontainer">
+      <h4>Xspeed</h4>
+      <input
+        type="range"
+        min="0"
+        max="200"
+        value="100"
+        class="slider"
+        id="sliderx"
+      />
+    </div>
+
+    <div class="slidecontainer">
+      <h4>distance</h4>
+      <input
+        type="range"
+        min="10"
+        max="190"
+        value="100"
+        class="slider"
+        id="size"
+      />
+    </div>
+
+    <div class="slidecontainer">
+      <h4>Y</h4>
+      <input
+        type="range"
+        min="1"
+        max="200"
+        value="100"
+        class="slider"
+        id="y-add"
+      />
+    </div>
+
+    <div class="slidecontainer">
+      <h4>X</h4>
+      <input
+        type="range"
+        min="1"
+        max="200"
+        value="100"
+        class="slider"
+        id="x-add"
+      />
+    </div>
+
+    <div class="slidecontainer">
+
+
+    <canvas
+      id="canvas"
+      class="canvas"
+      width="1000"
+      height="600"
+      style="margin-top: -400px; margin-left: 150px"
+    ></canvas>
+    
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
