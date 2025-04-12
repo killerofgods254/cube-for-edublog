@@ -1,4 +1,3 @@
-import "./styles.css";
 
 let count = 0;
 let fov = (6 * document.getElementById("size").value) / 100;
