@@ -48,8 +48,8 @@ setInterval(() => {
   fov = 7 - document.getElementById("size").value / 40;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   let count = 0;
-  rotationy += (100 - document.getElementById("slidery").value) / 5000;
-  rotationx += (100 - document.getElementById("sliderx").value) / 5000;
+  rotationy += (document.getElementById("slidery").value) / 5000;
+  rotationx += (document.getElementById("sliderx").value) / 5000;
 
   for (let i of points) {
     let x = i[0];
