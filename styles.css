@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+.dot {
+  height: 0px;
+  width: 0px;
+  background-color: #767676;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+}
+.line {
+  border: 0;
+  background-color: #000;
+  height: 3px;
+  cursor: pointer;
+}
+
+canvas {
+  position: static;
+}
