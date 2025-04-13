@@ -118,6 +118,16 @@ setInterval(() => {
       }
   
     //decrease heat (passive cooling)
-      overdrive -= 0.5
+      overdrive -= 0.5;
+
+  //overheating
+    if(overdrive > 300)
+    {
+      document.body.style.backgroundColor = "red";
+    }
+    else
+    {
+      document.body.style.backgroundColor = "white";
+    }
   
 }, 10);
