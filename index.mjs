@@ -44,6 +44,8 @@ let lines = [
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+let overdrive = 0.0;
+
 setInterval(() => {
   fov = 7 - document.getElementById("size").value / 40;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -86,7 +88,8 @@ setInterval(() => {
     temp_points[count] = [x, y, z];
 
     count++;          
-    for (let i of lines) {
+    for (let i of lines) 
+    {
       let startdot = document.getElementById("dot" + i[0]);
       let enddot = document.getElementById("dot" + i[1]);
 
@@ -97,5 +100,24 @@ setInterval(() => {
       ctx.closePath();
       ctx.stroke();
     }
+    
   }
+      //END OF CUBE CODE
+
+  //these need to be seperate
+    //increase heat if in overdrive mode for y slider
+      if (document.getElementById("Yspeed").value > 160)
+      {
+        overdrive += 1 + (document.getElementById("Yspeed").value - 160) / 100;
+      }
+  
+    //increase heat for x slider
+      if (document.getElementById("Xspeed").value > 160)
+      {
+        overdrive += 1 + (document.getElementById("Xspeed").value - 160) / 100;
+      }
+  
+    //decrease heat (passive cooling)
+      overdrive -= 0.5
+  
 }, 10);
