@@ -22,13 +22,23 @@ body {
   width: 150px;
   height: 8px;
   border-radius: 20px;
-  background: linear-gradient(to right, #d3d3d3 0%, #d3d3d3 70%, #ff0000 70%, #ff0000 100%);
+  background: #d3d3d3;
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+}
 
-  
+.overdriveSlider {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 8px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #d3d3d3 0%, #d3d3d3 80%, #ff0000 80%, #ff0000 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 canvas {
