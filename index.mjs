@@ -48,8 +48,8 @@ setInterval(() => {
   fov = 7 - document.getElementById("size").value / 40;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   let count = 0;
-  rotationy += (document.getElementById("slidery").value) / 5000;
-  rotationx += (document.getElementById("sliderx").value) / 5000;
+  rotationy += (document.getElementById("slidery").value) / 5000 * -1;
+  rotationx += (document.getElementById("sliderx").value) / 5000 * -1;
 
   for (let i of points) {
     let x = i[0];
@@ -85,7 +85,7 @@ setInterval(() => {
     dot.style.marginTop = y + "px";
     temp_points[count] = [x, y, z];
 
-    count++;
+    count++;          
     for (let i of lines) {
       let startdot = document.getElementById("dot" + i[0]);
       let enddot = document.getElementById("dot" + i[1]);
