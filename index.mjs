@@ -106,15 +106,15 @@ setInterval(() => {
 
   //these need to be seperate
     //increase heat if in overdrive mode for y slider
-      if (document.getElementById("Yspeed").value > 160)
+      if (document.getElementById("slidery").value > 160)
       {
-        overdrive += 1 + (document.getElementById("Yspeed").value - 160) / 100;
+        overdrive += 1 + (document.getElementById("slidery").value - 160) / 100;
       }
   
     //increase heat for x slider
-      if (document.getElementById("Xspeed").value > 160)
+      if (document.getElementById("sliderx").value > 160)
       {
-        overdrive += 1 + (document.getElementById("Xspeed").value - 160) / 100;
+        overdrive += 1 + (document.getElementById("sliderx).value - 160) / 100;
       }
   
     //decrease heat (passive cooling)
