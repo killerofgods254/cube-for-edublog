@@ -71,7 +71,7 @@ setInterval(() => {
     x =
       (((x * fov) / (fov + z)) * 130 * document.getElementById("size").value) /
         100 +
-      200 +
+      250 +
       (document.getElementById("x-add").value - 100) * 2;
 
     y =
