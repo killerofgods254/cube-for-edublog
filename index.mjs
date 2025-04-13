@@ -114,7 +114,7 @@ setInterval(() => {
     //increase heat for x slider
       if (document.getElementById("sliderx").value > 160)
       {
-        overdrive += 1 + (document.getElementById("sliderx).value - 160) / 100;
+        overdrive += 1 + (document.getElementById("sliderx").value - 160) / 100;
       }
   
     //decrease heat (passive cooling)
