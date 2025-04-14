@@ -115,11 +115,11 @@ setInterval(() => {
       //calculate heating and cooling (complicated math shit)
       if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
       {
-        overdrive += 0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 200;
+        overdrive += 0.25 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 250;
       }
       else
       {
-        overdrive += -0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 200;
+        overdrive += -0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 250;
       }
       
   
@@ -128,7 +128,7 @@ setInterval(() => {
   //overheating
     if(overdrive > 300)
     {
-      document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 300)}, ${255 - (overdrive - 300)})`;
+      document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 300) / 1.5}, ${255 - (overdrive - 300) / 1.5})`;
 
       document.getElementById("overheatText").style.opacity = 1;
     }
