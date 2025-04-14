@@ -117,13 +117,13 @@ setInterval(() => {
     //increase heat if in overdrive mode for y slider
       if (document.getElementById("slidery").value > 160)
       {
-        overdrive += 1 + (document.getElementById("slidery").value - 160) / 100;
+        overdrive += 0.8 + (document.getElementById("slidery").value - 160) / 100;
       }
   
     //increase heat for x slider
       if (document.getElementById("sliderx").value > 160)
       {
-        overdrive += 1 + (document.getElementById("sliderx").value - 160) / 100;
+        overdrive += 0.8 + (document.getElementById("sliderx").value - 160) / 100;
       }
   
     //decrease heat (passive cooling)
@@ -133,9 +133,9 @@ setInterval(() => {
       }
 
   //overheating
-    if(overdrive > 200)
+    if(overdrive > 400)
     {
-      document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 200)}, ${255 - (overdrive - 200)})`;
+      document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 400)}, ${255 - (overdrive - 400)})`;
     }
 
 }, 10);
