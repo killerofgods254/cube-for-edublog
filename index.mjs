@@ -113,29 +113,16 @@ setInterval(() => {
   }
       //END OF CUBE CODE
 
-  //these need to be seperate
-    //increase heat if in overdrive mode for y slider
-      if (document.getElementById("slidery").value > 160)
-      {
-        overdrive += 0.8 + (document.getElementById("slidery").value - 160) / 100;
-      }
-  
-    //increase heat for x slider
-      if (document.getElementById("sliderx").value > 160)
-      {
-        overdrive += 0.8 + (document.getElementById("sliderx").value - 160) / 100;
-      }
+      overdrive += 0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("slidery").value - 160)) / 200;
+      
   
     //decrease heat (passive cooling)
-      if (overdrive > 0)
-      {
-      overdrive -= 0.5;
-      }
+      overdrive = Math.min(0, overdrive)
 
   //overheating
-    if(overdrive > 400)
+    if(overdrive > 300)
     {
-      document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 400)}, ${255 - (overdrive - 400)})`;
+      document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 300)}, ${255 - (overdrive - 300)})`;
 
       document.getElementById("overheatText").style.opacity = 1;
     }
