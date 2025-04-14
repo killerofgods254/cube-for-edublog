@@ -115,11 +115,11 @@ setInterval(() => {
       //calculate heating and cooling (complicated math shit)
       if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
       {
-        overdrive += 0.1 + ((document.getElementById("slidery").value - 160) + (document.getElementById("slidery").value - 160)) / 200;
+        overdrive += 0.1 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 200;
       }
       else
       {
-        overdrive += -0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("slidery").value - 160)) / 200;
+        overdrive += -0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 200;
       }
       
   
