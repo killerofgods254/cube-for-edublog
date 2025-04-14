@@ -115,15 +115,15 @@ setInterval(() => {
       //calculate heating and cooling
       if(document.getElementById("slidery").value > 160)
       {
-        overheat += 0.2
+        overdrive += 0.2
       }
       if(document.getElementById("sliderx").value > 160)
       {
-        overheat += 0.2
+        overdrive += 0.2
       }
       if(document.getElementById("sliderx").value < 160 && document.getElementById("slidery").value < 160)
       {
-        overheat -= 0.2
+        overdrive -= 0.2
       }
       
   
