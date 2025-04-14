@@ -115,22 +115,28 @@ setInterval(() => {
       //calculate heating and cooling
       if(document.getElementById("slidery").value > 160)
       {
-        overdrive += 0.2
+        overdrive += 0.3
       }
+      else
+      {
+        overdrive -= 0.1
+      }
+  
       if(document.getElementById("sliderx").value > 160)
       {
-        overdrive += 0.2
+        overdrive += 0.3
       }
-      if(document.getElementById("sliderx").value < 160 && document.getElementById("slidery").value < 160)
+      else
       {
-        overdrive -= 0.2
+        overdrive -= 0.1
       }
+
       
   
       overdrive = Math.max(0, overdrive)
 
   //overheating
-    if(overdrive > 350)
+    if(overdrive > 300)
     {
       document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 300) / 1.5}, ${255 - (overdrive - 300) / 1.5})`;
 
