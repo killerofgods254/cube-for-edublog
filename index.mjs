@@ -45,13 +45,22 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 let overdrive = 0.0;
-
+let inOverdrive = false;
+let speedMultiplier = 1;
 setInterval(() => {
   fov = 7 - document.getElementById("size").value / 40;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   let count = 0;
-  rotationy += (document.getElementById("slidery").value) / 5000 * -1;
-  rotationx += (document.getElementById("sliderx").value) / 5000 * -1;
+
+  speedMultiplier = 1;
+  if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
+  {
+    inOverdriver = true;
+    speedMultiplier = 1.2;
+  }
+  
+  rotationy += (document.getElementById("slidery").value) / 5000 * -1 * speedMultiplier;
+  rotationx += (document.getElementById("sliderx").value) / 5000 * -1 * speedMultiplier;
 
   for (let i of points) {
     let x = i[0];
