@@ -116,8 +116,7 @@ setInterval(() => {
       overdrive += 0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("slidery").value - 160)) / 200;
       
   
-    //decrease heat (passive cooling)
-      overdrive = Math.min(0, overdrive)
+      overdrive = Math.max(0, overdrive)
 
   //overheating
     if(overdrive > 300)
