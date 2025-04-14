@@ -55,7 +55,7 @@ setInterval(() => {
   speedMultiplier = 1;
   if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
   {
-    inOverdriver = true;
+    inOverdrive = true;
     speedMultiplier = 1.2;
   }
   
