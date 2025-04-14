@@ -41,6 +41,11 @@ body {
   transition: opacity 0.2s;
 }
 
+.warning {
+  position: fixed;
+  color: red;
+}
+
 canvas {
   position: static;
 }
