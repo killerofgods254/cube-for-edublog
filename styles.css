@@ -3,8 +3,8 @@ body {
   overflow: hidden;
 }
 .dot {
-  height: 50px;
-  width: 5px;
+  height: 0px;
+  width: 0px;
   background-color: #767676;
   border-radius: 50%;
   display: inline-block;
