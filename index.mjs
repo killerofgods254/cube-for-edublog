@@ -56,7 +56,7 @@ setInterval(() => {
   if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
   {
     inOverdrive = true;
-    speedMultiplier = 1.2;
+    speedMultiplier = 1.3;
   }
   
   rotationy += (document.getElementById("slidery").value) / 5000 * -1 * speedMultiplier;
@@ -112,8 +112,15 @@ setInterval(() => {
     
   }
       //END OF CUBE CODE
-
-      overdrive += 0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("slidery").value - 160)) / 200;
+      //calculate heating and cooling (complicated math shit)
+      if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
+      {
+        overdrive += 0.1 + ((document.getElementById("slidery").value - 160) + (document.getElementById("slidery").value - 160)) / 200;
+      }
+      else
+      {
+        overdrive += -0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("slidery").value - 160)) / 200;
+      }
       
   
       overdrive = Math.max(0, overdrive)
