@@ -3,8 +3,8 @@ body {
   overflow: hidden;
 }
 .dot {
-  height: 0px;
-  width: 0px;
+  height: 50px;
+  width: 5px;
   background-color: #767676;
   border-radius: 50%;
   display: inline-block;
@@ -20,7 +20,7 @@ body {
 .slider {
   -webkit-appearance: none;
   width: 150px;
-  height: 8px;
+  height: 10px;
   border-radius: 21px;
   background: #d3d3d3;
   outline: none;
@@ -32,7 +32,7 @@ body {
 .overdriveSlider {
   -webkit-appearance: none;
   width: 150px;
-  height: 8px;
+  height: 10px;
   border-radius: 20px;
   background: linear-gradient(to right, #d3d3d3 0%, #d3d3d3 80%, #ff0000 80%, #ff0000 100%);
   outline: none;
