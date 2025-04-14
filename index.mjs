@@ -136,6 +136,12 @@ setInterval(() => {
     if(overdrive > 400)
     {
       document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 400)}, ${255 - (overdrive - 400)})`;
+
+      document.getElementById("overheatText").style.opacity = 1;
+    }
+    else
+    {
+      document.getElementById("overheatText").style.opacity = 0;
     }
 
 }, 10);
