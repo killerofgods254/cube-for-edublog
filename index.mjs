@@ -112,21 +112,25 @@ setInterval(() => {
     
   }
       //END OF CUBE CODE
-      //calculate heating and cooling (complicated math shit)
-      if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
+      //calculate heating and cooling
+      if(document.getElementById("slidery").value > 160)
       {
-        overdrive += 0.35 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 330;
+        overheat += 0.2
       }
-      else
+      if(document.getElementById("sliderx").value > 160)
       {
-        overdrive += -0.2 + ((document.getElementById("slidery").value - 160) + (document.getElementById("sliderx").value - 160)) / 250;
+        overheat += 0.2
+      }
+      if(document.getElementById("sliderx").value < 160 && document.getElementById("slidery").value < 160)
+      {
+        overheat -= 0.2
       }
       
   
       overdrive = Math.max(0, overdrive)
 
   //overheating
-    if(overdrive > 300)
+    if(overdrive > 350)
     {
       document.body.style.backgroundColor = `rgb(${255}, ${255 - (overdrive - 300) / 1.5}, ${255 - (overdrive - 300) / 1.5})`;
 
