@@ -56,7 +56,7 @@ setInterval(() => {
   if(document.getElementById("slidery").value > 160 || document.getElementById("sliderx").value > 160)
   {
     inOverdrive = true;
-    speedMultiplier = 1.3;
+    speedMultiplier = 1.3 + overdrive / 2000;
   }
   
   rotationy += (document.getElementById("slidery").value) / 5000 * -1 * speedMultiplier;
@@ -134,6 +134,7 @@ setInterval(() => {
       
   
       overdrive = Math.max(0, overdrive)
+      overdrive = Math.min(600, overdrive)
 
   //overheating
     if(overdrive > 300)
