@@ -129,6 +129,11 @@ setInterval(() => {
 
   overdrive -= 0.05; //rose is coolant
 
+  if(overdrive < 250) //heats up less when cold
+  {
+    overdrive -= 0.1;
+  }
+
   overdrive = Math.max(0, overdrive);
   overdrive = Math.min(550, overdrive);
 
