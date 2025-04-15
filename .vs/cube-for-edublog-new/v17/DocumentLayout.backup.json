@@ -22,11 +22,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -49,7 +53,7 @@
               "RelativeDocumentMoniker": "index.mjs",
               "ToolTip": "C:\\Users\\EvanR\\source\\repos\\cube-for-edublog-new\\index.mjs",
               "RelativeToolTip": "index.mjs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-15T03:38:44.295Z",
               "EditorCaption": ""
@@ -62,7 +66,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\EvanR\\source\\repos\\cube-for-edublog-new\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-15T03:38:38.746Z",
               "EditorCaption": ""
