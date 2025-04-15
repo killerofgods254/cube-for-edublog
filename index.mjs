@@ -134,7 +134,7 @@ setInterval(() => {
       
   
       overdrive = Math.max(0, overdrive)
-      overdrive = Math.min(600, overdrive)
+      overdrive = Math.min(500, overdrive)
 
   //overheating
     if(overdrive > 300)
@@ -146,6 +146,15 @@ setInterval(() => {
     else
     {
       document.getElementById("overheatText").style.opacity = 0;
+    }
+
+    if(overdrive > 500)
+    {
+      
+    }
+    else
+    {
+
     }
 
 }, 10);
