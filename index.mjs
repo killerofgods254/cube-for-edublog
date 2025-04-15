@@ -115,20 +115,20 @@ setInterval(() => {
       //calculate heating and cooling
       if(document.getElementById("slidery").value > 160)
       {
-        overdrive += 0.3
+          overdrive += 0.2 + document.getElementById("slidery").value / 400;
       }
       else
       {
-        overdrive -= 0.1
+          overdrive -= 0.07 + document.getElementById("slidery").value / 900;
       }
   
       if(document.getElementById("sliderx").value > 160)
       {
-        overdrive += 0.3
+          overdrive += 0.2 + document.getElementById("slidery").value / 400;
       }
       else
       {
-        overdrive -= 0.1
+          overdrive -= 0.07 + document.getElementById("slidery").value / 900;
       }
 
       
