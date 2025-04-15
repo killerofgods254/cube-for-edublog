@@ -133,8 +133,8 @@ setInterval(() => {
 
       overdrive -= 0.05; //rose is coolant
   
-      overdrive = Math.max(0, overdrive)
-      overdrive = Math.min(500, overdrive)
+      overdrive = Math.max(0, overdrive);
+      overdrive = Math.min(500, overdrive);
 
   //overheating
     if(overdrive > 300)
@@ -147,7 +147,8 @@ setInterval(() => {
     {
       document.getElementById("overheatText").style.opacity = 0;
     }
-
+  
+  //extremely overheating
     if(overdrive > 500)
     {
       document.getElementById("overheatText").style.opacity = 1;
