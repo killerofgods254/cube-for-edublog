@@ -151,11 +151,11 @@ setInterval(() => {
   //extremely overheating
     if(overdrive > 500)
     {
-      document.getElementById("overheatText").style.opacity = 1;
+      document.getElementById("fire").style.opacity = 1;
     }
     else
     {
-      document.getElementById("overheatText").style.opacity = 0;
+      document.getElementById("fire").style.opacity = 0;
     }
 
 }, 10);
