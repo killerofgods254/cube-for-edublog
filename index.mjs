@@ -150,11 +150,11 @@ setInterval(() => {
 
     if(overdrive > 500)
     {
-      
+      document.getElementById("overheatText").style.opacity = 1;
     }
     else
     {
-
+      document.getElementById("overheatText").style.opacity = 0;
     }
 
 }, 10);
