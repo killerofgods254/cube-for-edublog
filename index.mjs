@@ -155,7 +155,7 @@ setInterval(() => {
     }
     else
     {
-      document.getElementById("fire").style.opacity = 0;
+      document.getElementById("fire").style.opacity = 0.1;
     }
 
 }, 10);
