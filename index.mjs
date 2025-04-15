@@ -155,7 +155,7 @@ setInterval(() => {
     }
     else
     {
-      document.getElementById("fire").style.marginTop = 1000;
+      document.getElementById("fire").style.marginTop = 0;
     }
 
 }, 10);
