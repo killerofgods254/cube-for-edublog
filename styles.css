@@ -10,12 +10,6 @@ body {
   display: inline-block;
   position: fixed;
 }
-.line {
-  border: 0;
-  background-color: #000;
-  height: 3px;
-  cursor: pointer;
-}
 
 .slider {
   -webkit-appearance: none;
