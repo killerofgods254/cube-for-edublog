@@ -119,7 +119,7 @@ setInterval(() => {
       }
       else
       {
-          overdrive -= 0.07 + document.getElementById("slidery").value / 900;
+          overdrive -= 0.15 - document.getElementById("slidery").value / 900;
       }
   
       if(document.getElementById("sliderx").value > 160)
@@ -128,7 +128,7 @@ setInterval(() => {
       }
       else
       {
-          overdrive -= 0.07 + document.getElementById("slidery").value / 900;
+          overdrive -= 0.15 - document.getElementById("slidery").value / 900;
       }
 
       
