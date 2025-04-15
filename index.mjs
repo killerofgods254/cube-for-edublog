@@ -124,11 +124,11 @@ setInterval(() => {
   
       if(document.getElementById("sliderx").value > 160)
       {
-          overdrive += 0.2 + document.getElementById("slidery").value / 400;
+          overdrive += 0.2 + document.getElementById("sliderx").value / 400;
       }
       else
       {
-          overdrive -= 0.15 - document.getElementById("slidery").value / 900;
+          overdrive -= 0.15 - document.getElementById("sliderx").value / 900;
       }
 
       
