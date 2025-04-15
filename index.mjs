@@ -1,4 +1,4 @@
-
+ve
 let count = 0;
 let fov = (6 * document.getElementById("size").value) / 100;
 let rotationx = 0;
@@ -131,7 +131,7 @@ setInterval(() => {
           overdrive -= 0.15 - document.getElementById("slidery").value / 900;
       }
 
-      
+      overdrive -= 0.05; //rose is coolant
   
       overdrive = Math.max(0, overdrive)
       overdrive = Math.min(500, overdrive)
