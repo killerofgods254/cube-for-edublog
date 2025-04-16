@@ -1,3 +1,4 @@
+
 let fov = (6 * document.getElementById("size").value) / 100;
 let rotationx = 0;
 let rotationy = 0;
@@ -191,3 +192,44 @@ setInterval(() => {
     document.getElementById("fire").style.marginTop = "0px";
   }
 }, 10);
+
+
+// Display overdrive value continuously while "K" is held
+let kKeyPressed = false;
+
+document.addEventListener("keydown", (event) => {
+  if (event.key.toLowerCase() === "k") {
+    kKeyPressed = true;
+
+    let display = document.getElementById("overdrive-display");
+    if (!display) {
+      display = document.createElement("div");
+      display.id = "overdrive-display";
+      display.style.position = "absolute";
+      display.style.top = "10px";
+      display.style.right = "10px";
+      display.style.padding = "10px";
+      display.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+      display.style.color = "white";
+      display.style.fontSize = "20px";
+      display.style.fontFamily = "monospace";
+      document.body.appendChild(display);
+    }
+  }
+});
+
+document.addEventListener("keyup", (event) => {
+  if (event.key.toLowerCase() === "k") {
+    kKeyPressed = false;
+  }
+});
+
+// Update the overdrive display every frame if "K" is pressed
+setInterval(() => {
+  if (kKeyPressed) {
+    let display = document.getElementById("overdrive-display");
+    if (display) {
+      display.textContent = `Overdrive: ${overdrive.toFixed(2)}`;
+    }
+  }
+}, 100);
