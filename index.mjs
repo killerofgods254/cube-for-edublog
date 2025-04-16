@@ -113,19 +113,27 @@ setInterval(() => {
       ctx.stroke();
     }
   }
-  //END OF CUBE CODE
-  //calculate heating and cooling
-  if (document.getElementById("slidery").value > 160) {
-    overdrive += 0.2 + document.getElementById("slidery").value / 400;
-  } else {
-    overdrive -= 0.15 - document.getElementById("slidery").value / 900;
-  }
 
-  if (document.getElementById("sliderx").value > 160) {
-    overdrive += 0.2 + document.getElementById("slidery").value / 400;
-  } else {
-    overdrive -= 0.15 - document.getElementById("slidery").value / 900;
-  }
+      //END OF CUBE CODE
+      //calculate heating and cooling
+      if(document.getElementById("slidery").value > 160)
+      {
+          overdrive += 0.2 + document.getElementById("slidery").value / 400;
+      }
+      else
+      {
+          overdrive -= 0.15 - document.getElementById("slidery").value / 900;
+      }
+  
+      if(document.getElementById("sliderx").value > 160)
+      {
+          overdrive += 0.2 + document.getElementById("sliderx").value / 400;
+      }
+      else
+      {
+          overdrive -= 0.15 - document.getElementById("sliderx").value / 900;
+      }
+
 
   overdrive -= 0.05; //rose is coolant
 
